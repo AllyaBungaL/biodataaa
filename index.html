@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biodata Diri</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<style type="text/css">
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin:0;
+			line-height: 1.5em;
+		}		
+		h1{
+			font-weight: lighter;
+		}
+		.container{
+			margin: 0;
+			background-color: #f7cdcd;
+			background-image: url("Coffee-At-Work-Wallpaper.jpg");
+		 }
+		.Header{
+			width: 100%;
+			height: 50px;
+			background-color: #C97171;
+			opacity: 0.8;
+		}
+		.content-outer{
+			min-height: 500px;
+		}
+		#main-content{
+			width: 80%;
+			min-height: 100%;
+			background-color: #FFFFFF;
+		    position: relative;
+		    margin: 90px auto;
+		    text-align: center;
+		}
+		.Footer{
+			width: 100%;
+			height: 40px;
+			background-color: #C97171;
+		}
+		.Footer p{
+			text-align: center;
+			padding: 10px;
+		}
+		.Navigation ul{
+			margin: center;
+			float: right;
+		}
+		.Navigation ul li{
+			list-style: none;
+			float: left;
+		}
+		.Navigation ul li a{
+			padding: 16px;
+			text-decoration: none;
+			color: white;
+			cursor: pointer;
+		}
+		.Navigation ul li a:hover{
+			text-decoration: underline;
+		}
+		.desc {
+			position: relative;
+			padding: 10px 30px 30px 30px;
+			background-color: #FFE1E1;
+			border-radius: 8px;
+			margin-bottom: 20px;
+		}
+		.desc img {
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+        }
+		.personal-info{
+			padding-bottom: 30px;
+		}
+		.personal-info table{
+			margin: auto;
+			width: 600px;
+		}
+		td{
+			text-align: left;
+			vertical-align: top;
+			padding-left: 80px;
+			padding-bottom: 10px;
+		}
+		.thumbnail{
+			background-color: white;
+			text-align: center;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="Header">
+			<div class="Navigation">
+				<ul>
+					<li><a onclick="show('content4')">About Me</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content-outer">
+			<div id ="main-content">
+				<div class="desc">
+					<img src="fotodiri.png">
+					<h1>Allya Bunga Lestari</h1>
+					<p>SMK Negeri 10 Jakarta</p>
+					<p>My name is Allya Bunga Lestari. I love to study a new thing. </p>
+				</div>
+				<div class="personal-info">
+					<h1>Personal Information</h1>
+					<table>
+						<tr>
+							<td class="ket">Birthday</td>
+							<td>03 Agustus</td>
+						</tr>
+						<tr>
+							<td class="ket">Address</td>
+							<td>Jl.Nusa 1 No.35A</td>
+						</tr>
+						<tr>
+							<td class="ket">Phone</td>
+							<td>081399396607</td>
+						</tr>
+						<tr>
+							<td class="ket">Email</td>
+							<td>starszey.lya@gmail.com</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="Footer">
+			<p>copyright 2024 - Allya Bunga Lestari</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	function show(param_div_id) {
+    	document.getElementById('main-content').innerHTML = document.getElementById(param_div_id).innerHTML;
+  	}
+</script>
+</html>
